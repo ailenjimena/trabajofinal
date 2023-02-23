@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" type="text/css" href="personalizae.css">
+  
+</head>
+
+<body>
+   
+    <div class="contenedor">
+        <div class="item"><h1 id="Nombre">Jimena Ramirez</h1>
+        </div>
+        <div class="item"><img id="foto" src="foto.jpg" alt="foto" height="250px" width="150px">
+
+        </div>
+
+        <div class="item">  <p id="presentacion">Estimados Sres/Sras.,
+
+            Con referencia a su vacante publicada en el portal de empleo, adjunto remito mi currículum 
+            vitae.
+    
+            Dada mi formación en el area, así como la amplia experiencia adquirida en 
+           el puesto ofertado,
+            considero que podría encajar en el mismo. Estoy muy interesada en participar en su proceso 
+            de selección, por lo
+            que quedo a su disposición para concertar una entrevista y comentar en profundidad mi 
+            formación y experiencia.
+    
+            A la espera de sus noticias, me despide atentamente.</p>
+        </div>
+        <divclass="item"></div>
+
+         
+            <button type="button"  class="boton" id="DatosPersonalesboton" onclick="mostrar('DatosPersonales')" >Datos Personales</button>
+            
+            <button type="button" class="boton" id="Estudiosboton" onclick="mostrar('Estudios')">Estudios</button>
+            
+            <button type="button" class="boton" id="ExperienciaLaboralboton" onclick="mostrar('Experiencia')">Experiencia Laboral</button>
+        
+            <button type="button" class="boton" id="Sobremiboton" onclick="mostrar('Sobremi')">Sobre mi</button>
+           
+            <button type="button" class="boton"id="contactameboton" onclick="mostrar('contacto')">Contacto</button>
+          
+        
+
+        <div class="ocultar"  id="DatosPersonales" > <h1>Datos Personales</h1>
+            <main>
+                <ul>
+                    <li>Nombre: Jimena Ramirez</li>
+                    <li>DNI: 38891454</li>
+                    <li>Edad: 27</li>
+                    <li>Fecha de Nacimiento: 30/04/1995</li>
+                    <li>Nacionalidad: Argentina </li>
+                    <li>Direccion: Av. Cordoba 2363 2 A, CABA</li>
+                    <li>Telefono: 1533456789</li>
+                    <li>Correo electronico: jimeramirez@gmail.com</li>
+                </ul>
+            </main>
+        </div>
+
+        <div class="ocultar" id="Estudios"> <h2>Estudios</h2>
+            <P>Secundaria: Carlos Pellegrini (2010)</P>
+            <p>Enfermera: UBA (2022) </p>
+        </div>
+            <div class="ocultar" id="Experiencia"><h3>Experiencia Laboral</h3>
+            <main>
+                <ul>
+                    <li> Frcity (2018-Actualidad) Nro referencia: 1598765432
+                    </li>
+                    <li>Dr. Barato (2014-2018) Nro referencia: 1565432109</li>
+                </ul>
+            </main>
+        </div>
+
+        <div  class="ocultar"id="Sobremi"><h3>Sobre mi</h3>
+            <P>Enfermera practicante que busca una oportunidad de trabajo con más responsabilidad. 
+                Altamente capacitada para analizar información, evaluaciones físicas y pensamiento crítico. 
+                Obtuve múltiples certificados como TNCC y MAB. Buscando una organización que pueda ofrecerme 
+                un rol con más responsabilidades y un contrato a largo plazo</P>
+            </div>
+            <div class="ocultar" id="contacto">
+                <h4>Contacto</h4>
+            <form action="" method="get">
+    <main>
+        <ul>
+            <li>Empresa
+    <label for="Empresa"></label>
+    <input type="text" name="Empresa" placeholder="Ingrese de que empresa quiere contactarme">
+</li>
+<li>Correo Electronico
+    <label for="Correo electronico"></label>
+    <input type="mail" name="Correo Electronico" placeholder="Ingrese su correo electronico">
+</li>
+<li>Telefono
+    <label for="Telefono"></label>
+    <input type="number" name="Telefono" placeholder="Ingrese su numero de telefono">
+    <input type="submit" value="Enviar">
+</li>
+</ul>
+</main>
+</div>
+
+
+</form>
+<script src="cv.js"></script>
+</body>
+</html>
